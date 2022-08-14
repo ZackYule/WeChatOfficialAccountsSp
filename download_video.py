@@ -32,7 +32,7 @@ def download_video(url, name, path=""):
                 with open(file_path,'wb')as f:
                     f.write(data)
                     f.close()
-                    print('视频下载成功:'+url)
+                    logger.info('视频下载成功:'+url)
     except Exception:
         logger.warning('视频下载失败')
         logger.warning(Exception)
